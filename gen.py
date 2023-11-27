@@ -1,3 +1,4 @@
+from pathlib import Path
 from matplotlib import font_manager
 from itertools import product
 from matplotlib.cm import get_cmap
@@ -126,7 +127,7 @@ y = y * 10 - 5
 
 
 def plot_one(
-    ax, cmap, name, short, desc, meth, group=None, gn="0/0", tn="0/0", logo_inset=False
+    ax, cmap, name, short, psi, logo, desc, meth, group=None, gn="0/0", tn="0/0", logo_inset=False
 ):
     if meth == "hex":
         ax.hexbin(
@@ -173,7 +174,10 @@ def plot_one(
         [-Y + INS, 0.4 + INS, 2 * Y - 2 * INS, 2.0 - 2 * INS], transform=ax.transData
     )
 
-    logo = mpimg.imread(f"logos/{name.lower()}.png")
+    imfl = Path(f"logos/{logo}.png")
+    if not imfl.exists():
+        imfl = Path(f"logos/{logo}.jpg")
+    logo = mpimg.imread(imfl)
     # newax = fig.add_axes([0.20, 0.48, 0.62, 0.22], anchor='C', zorder=1)
     if name == "stefanv":
         im = axins.imshow(logo, cmap="gray")
@@ -192,7 +196,8 @@ def plot_one(
     # p2 = PatchCollection([crect], alpha=0.80, ec=cc, fc=get_cmap(cmap)(0.7), lw=0)
     p2 = PatchCollection([crect], alpha=0.80, ec=cc, fc="white", lw=0)
     ax.add_collection(p2)
-    footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
+    #footer = "Trade this card with other attendees. Find a pair.\nCome get more at NumFOCUS or QuanSight Booth"
+    footer = f"Trade these cards with other attendees to collect 'P', 'S', 'I' in\nthe same category & fulfill their tasks. See loriab for prize."
 
     ax.text(
         0,
@@ -208,7 +213,7 @@ def plot_one(
     ax.text(
         -2.0,
         -0.1,
-        short + " " + gn,
+        f"{short} {gn}, type-{psi}",
         fontsize=30,
         fontfamily="Menlo",
         fontweight="light",
@@ -239,7 +244,7 @@ def plot_one(
     fcolor = "black"
 
     txt = ax.text(
-        -2.0, -2.9, footer + "   " + tn, fontsize=18, fontfamily="Raleway", color=fcolor
+        -2.0, -2.9, footer + " " + tn, fontsize=16, fontfamily="Raleway", color=fcolor
     )
 
     # for t in [txt]:
@@ -263,6 +268,8 @@ for g in groups[:]:
         if len(matching) == 1:
             dx = matching[0]
             desc = dx["desc"]
+            psi = dx["psi"]
+            logo = dx["logo"]
 
             if isinstance(desc, str):
                 desc = [desc]
@@ -273,6 +280,8 @@ for g in groups[:]:
                         meth=g["shape"],
                         name=dx["name"],
                         short=g["name"],
+                        psi=psi,
+                        logo=logo,
                         desc=d,
                         gn=f'{i}/{len(g["items"])}',
                         logo_inset=dx.get("inset", False),
@@ -293,7 +302,7 @@ for k, var in enumerate(flatten, start=1):
         **var,
         tn=f"{k}/{total}",
     )
-    name = f"cards-groups/{var['short']}-{k}-{var['name']}-card.png".replace(" ", "-")
+    name = f"cards-groups/{k}-{var['psi']}-{var['short']}-{var['name']}-card.png".replace(" ", "-")
     gallery.append(f"<img src='{name}' width='30%' /> ")
     print(name)
     fig.savefig(

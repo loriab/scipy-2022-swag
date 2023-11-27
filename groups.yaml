@@ -1,83 +1,109 @@
-- name: Sky is the limit
-  cmap: Wistia
+- name: SAPT
+  cmap: RdBu
   shape: tri
   items:
-    - astropy
-    - poliastro
-    - sunpy
-    - skypy
-- name: Packaging
-  cmap: Greens
-  shape: noise
-  items:
-    - conda-forge
-    - conda
-    - conda-store
-- name: Performance
-  cmap: twilight
-  shape: scatter
-  items:
-    - Dask
-    - cython
-    - numba
-    - cupy
-- name: Visualization
-  cmap: winter
-  shape: hex
-  items:
-    - matplotlib
-    - bokeh
-    - Scikit-Image
-      #    - napari
-      #    - holoviz
-- name: Support
-  cmap: viridis
-  shape: tri
-  items:
-    - Numfocus
-    - Scipy 2023
-    - OpenTeams
-    - Scientific Python
-- name: IDE
-  shape: tri
-  cmap: Oranges
-  items:
-    - IPython
-    - Jupyter
-    - Spyder
-    - nebari
-- name: Mathematics
+    - dftsapt
+    - libsapt
+    - fisapt
+- name: Optimizers
   cmap: Purples
   shape: noise
   items:
-    - sympy
-    - scipy
-    - mathjax
-- name: Building blocks
-  shape: tri
-  cmap: Blues
+    - OptKing
+    - geomeTRIC
+    - PyBerny
+- name: Integrals
+  cmap: ocean
+  shape: hex
   items:
-    - numpy
-    - zarr
-    - xarray
-    - NetworkX
-- name: Machine Learning
-  shape: tri
+    - libmints
+    - simint
+    - Libint2
+    - x2c
+    - dkh
+    - ecpint
+- name: QC Deps
+  cmap: cubehelix
+  shape: scatter
+  items:
+    - QCElemental
+    - Libxc
+    - gau2grid
+    - OptKing _
+    - QCEngine
+    - Libint2 _
+- name: CC
   cmap: gist_heat
-  items:
-    - Scikit-Learn
-    - PyTorch Ignite
-- name: Dataframes
-  items:
-    - Pandas
-    - GeoPandas
-    - Pandera
   shape: tri
-  cmap: BrBG
-- name: Testing
   items:
-    - Pytest
-    - Hypothesis
-    - Ghostwriter
+    - ccenergy
+    - fnocc
+    - occ
+    - dlpno-cc
+    - mrcc
+    #- cfour
+    - psimrcc
+- name: MBPT
+  cmap: Pastel1
+  shape: noise
+  items:
+    - mp2f12
+    - dfmp2
+    - detci _
+- name: SCF
+  cmap: cividis
+  shape: hex
+  items:
+    - CompositeJK
+    - LibXCFunctional
+    - detcas
+- name: post SCF
+  cmap: winter
+  shape: scatter
+  items:
+    - detci
+    - dct
+    - adcc
+- name: Downstream
+  cmap: terrain
   shape: tri
-  cmap: rainbow  # *not* jet
+  items:
+    - pyVPT2
+    - resp
+    - Forte
+#- name: Solvation
+#  items:
+#    - libefp
+#    - pcmsolver
+#    - ddx
+#    - cppe
+#- name: Driver
+#  items:
+#    - Composite
+#    - FiniteDifference
+#    - ManyBody
+
+#- name: Generic
+#  cmap: Purples
+#  shape: noise
+#  items:
+#    - blankp
+#    - blanks
+#    - blanki
+
+# https://matplotlib.org/stable/users/explain/colors/colormaps.html
+#  cmap: ocean
+#  cmap: Greens
+#  cmap: twilight
+#  cmap: winter
+#  cmap: viridis
+#  cmap: Blues
+#  cmap: Purples
+#  cmap: gist_heat
+#  cmap: BrBG
+#  cmap: rainbow  # *not* jet
+
+#  shape: tri
+#  shape: noise
+#  shape: scatter
+#  shape: hex

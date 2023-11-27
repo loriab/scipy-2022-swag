@@ -1,464 +1,576 @@
-- name: Holoviz
+# NOTES
+# * https://github.com/<REPLACE_WITH_USERNAME>.png
+##########################################.
+- name: dftsapt
+  psi: P
+  logo: konpat
   desc: |+
-    High-level tools to simplify
-    visualization in Python
+    The third in our trio of SAPT imple-
+    mentations. This one lives py-side
+    and is the only one to do DFT-SAPT.
 
-    "Visualizations that jump out
-    of your screen."
-- name: Napari
-  desc: |+
-    Multi-dimensional image
-    viewer for Python
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
 
-- name: OpenTeams
+    Dev's Initials: _____________________
+- name: libsapt
+  psi: S
+  logo: egh
   desc: |+
-    A Network of Enterprise Solution 
-    Architects using open Source talent 
-    to build and maintain your software
-    solutions.
-- name: MathJax
-  desc: |+
-    A JavaScript display engine for
-    mathematics that works in all
-    browsers. 
-    It just works.
-    
-    "It's like in The matrix. You
-    get so used to it, you don't even 
-    see the LaTeX code anymore."
+    The first in our trio of SAPT imple-
+    mentations. This one lives c-side
+    and is the only one to do higher level
+    than SAPT0.
 
-- name: "Nebari"
-  desc: |+
-    Your open source data science
-    platform:
-    
-    Built for scale, designed for
-    collaboration.
+    Task: Find the file where the class
+    for unrestricted SAPT is defined.
 
-    “Nebari, not napari.
-    No, they’re not related.”
-    
-- name: "Conda-store"
+    File: _______________________________
+- name: fisapt
+  psi: I
+  logo: robparrish
   desc: |+
-    Flexible, reproducible, and managed
-    data science environments for
-    collaborative teams. 
+    The 2nd in our trio of implementations
+    & the only one to do partitioned SAPT.
 
-    “It works on my machine.
-    And, yours too!”
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
 
-- name: GeoPandas
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: OptKing
+  psi: P
+  logo: AlexHeide
   desc: |+
-    An open source project to make
-    working with geospatial data in
-    Python easier.
-    
-    "I'm pretty convinced dataframes
-    are actually spherical; and values
-    attracted toward the center of it."
+    The longstanding Psi4 geometry opti-
+    mizer, now independent. Unlike most,
+    it specializes in noncovalent systems.
 
-- name: SciPy 2023
-  meth: tri
-  desc: |+
-    July 10 – July 16, Austin, TX
-    
-    Best SciPy Conference – so far.
-    
-    Come for the language,
-    stay for the community.
-    
-    Thanks to all organizers.
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
 
-    
-- name: SciPy 2022
-  meth: tri
+    Dev's Initials: _____________________
+- name: geomeTRIC
+  psi: S
+  logo: geometric
   desc: |+
-    July 11 – July 17, Austin, TX
-    
-    Best SciPy Conference – so far.
-    
-    Come for the language,
-    stay for the community.
-    
-    Thanks to all organizers.
-- name: NumFOCUS
-  meth: tri
-  desc: |+
-    "Infrastructure is the backbone
-    of economic growth."
-    
-    Nothing  would be possible without
-    all the hands working behind the
-    scene at NumFOCUS.
-    
-    https://numfocus.org/donate
-- name: Xarray
-  meth: sca
-  desc: |+
-    Package that makes working with
-    labeled multi-dimensional arrays
-    simple, efficient, and fun!
-    
-    "I'm so familiar with higher
-    dimensions I call them
-    by their first names"
-- name: Zarr
-  inset: True
-  meth: hex
-  desc: 
-    - |+
-      Chunked, compressed, N-dimensional 
-      arrays storage format and library.
-      
-      "Also works with small datasets, 
-      of less than 128 Tb."
-- name: NumPy 
-  meth: tri
-  desc: 
-   - |+
-     >>> import numpy as np
-        
-     ND-arrays at your fingertips.
-     Pronounced "NUM-py" not "NUM-pee".
-        
-     "I thought it was part of the
-     standard library."
-   - |+
-     >>> import numpy as np
-        
-     ND-arrays at your fingertips.
-     Pronounced "NUM-py" not "NUM-pee".
-        
-     "Loops ? Which loops ? Where we go
-     we don't need loops."
-- name: SciPy
-  meth: hex
-  desc: |+
-    >>> import scipy as sp
-    
-    Fundamental algorithms for
-    scientific computing in Python
+    A standalone optimizer specializing
+    in constrained optimizations. Run with
+    geometric, QCEngine, or Psi4 as
+    driver, all with Psi4 gradients.
 
-    "I'm not afraid of math."
+    Task: Find where Psi4 driver decides
+    between geomeTRIC and OptKing.
 
+    File/~Line: _________________________
+- name: PyBerny
+  psi: I
+  logo: jhrmnn
+  desc: |+
+    This optimizer collects Schlegal's
+    algorithms. Run it through QCEngine.
 
-- name: Dask
-  meth: tri
-  desc: |+
-    >>> import dask as da
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
 
-    Parallelism for analytics,
-    performance at scale.
-    
-    "Oh, when you said 48, I though
-    you meant Racks, not Cores"
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: libmints
+  psi: P
+  logo: jturney
+  desc: |+
+    The "molecular" integrals module in
+    Psi4 provides a uniform and convenient
+    interface to 1e- and 2e- ints.
 
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
 
-- meth: tri
-  desc: 
-    - |+
-      >>> import matplotlib.pyplot as plt
+    Dev's Initials: _____________________
+- name: simint
+  psi: S
+  logo: simint
+  desc: |+
+    An alternate package for energy
+    electron repulsion integrals.
+    Specializes in vectorization for
+    different microarchitectures.
 
-      Library for creating static, animated,
-      and interactive visualizations.
-      It makes easy things easier and hard
-      things possible.
-      
-      "I've never seen the data speak for
-      itself that clearly"
-    - |+
-      >>> import matplotlib.pyplot as plt
+    Task: Find where libmints chooses
+    between Libint2 and simint.
 
-      Library for creating static, animated,
-      and interactive visualizations.
-      It makes easy things easier and hard
-      things possible.
+    File/~Lines: ________________________
+- name: Libint2
+  psi: I
+  logo: evaleev
+  desc: |+
+    The primary integrals dependency for
+    Psi4, providing 2e- and many 1e- ints.
 
-      "I'm wondering what are they plotting
-      behind our backs ..."
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
 
-  name: Matplotlib
-  inset: True
-- name: Scikit-Image
-  meth: hex
-  inset: True
+    Talk Time/PR No.: ___________________
+- name: x2c
+  psi: P
+  logo: fevangelista
   desc: |+
-    >>> import skimage
+    An implementation in libmints of ints
+    for the exact-two-component exchange
+    approach for scalar relativistic eff.
 
-    scikit-image is a collection of
-    algorithms for image processing.
-    
-    "You can just call it scikit for
-    short, everybody will understand" 
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
 
-- name: PyTorch Ignite
+    Dev's Initials: _____________________
+- name: dkh
+  psi: S
+  logo: psi4
   desc: |+
-    High-level library to help with
-    training and evaluating neural
-    networks in PyTorch flexibly and
-    transparently.
-    
-    "The spark that made my heart burn
-    for machine learning"
-- desc: |+
-    Fast, powerful, flexible, and easy
-    to use data analysis and manipulation
-    tool.
-    
-    "Stockholm syndrome is real, I got
-    confused as to why the local zoo was
-    advertising for a new release"
+    A dependency that provides ints to
+    libmints for the Douglas-Kroll-Hess
+    Hamiltonian for scalar relativistic
+    effects.
 
-  name: Pandas
-  meth: sca
-- name: SkyPy
-  desc:  |+
-    Package for simulating the
-    astrophysical sky. It
-    comprises a library of physical
-    and empirical models across a
-    range of observables and a command
-    line script to run end-to-end
-    simulations.
-- name: Astropy
-  meth: tri
-  desc: |+
-    >>> import astropy
+    Task: Find where enabling the dkh dep.
+    makes CMake enable the Fortran lang.
 
-    Common core package for Astronomy
-    to foster an ecosystem of
-    interoperable astronomy packages.
-    
-    "I got confused when you told me it
-    only has 3798 stars on GitHub"
+    File/~Lines: ________________________
+- name: ecpint
+  psi: I
+  #logo: robashaw
+  logo: andysim
+  desc: |+
+    A dependency that provides E & deriv
+    1e- ints for effective core potentials.
 
-- name: poliastro
-  inset: True
-  meth: tri
-  desc: |+
-    >>> import poliastro
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
 
-    Interactive Astrodynamics and
-    Orbital Mechanics, with a focus on
-    ease of use, speed, and quick
-    visualization.
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: QCElemental
+  psi: P
+  logo: loriab
+  desc: |+
+    This Python module provides physical
+    constants & periodic table but also
+    parses your molecule string.
 
-    "Per Python ad Astra"
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
 
-    
-- name: Bokeh
-  meth: noise
+    Dev's Initials: _____________________
+- name: Libxc
+  psi: S
+  logo: susilehtola
   desc: |+
-    >>> import bokeh.plotting as bp
-    
-    Create interactive visualizations
-    for modern web browsers. It helps
-    you build beautiful graphics, ranging
-    from simple plots to complex
-    dashboards with streaming datasets.
+    The poster child for modular QC
+    software, this C library provides
+    exchange-correlation kernels and
+    parameters for DFT functionals.
 
-    
-- name: Conda
-  meth: tri
-  desc: |+
-    $ conda create -n 3.10 python=3.10
-    
-    Package, dependency and environment
-    management for any language. 
-    
-    "really you can even install npm,
-    fpm... Like turtles it's package
-    managers all the way down"
-    
-- name: Conda-Forge
-  meth: hex
-  desc: |+
-    "I just wanted to let you know that
-    I linted all conda-recipes in your
-    PR (recipe) and found it was in an
-    excellent condition."
-- name: CuPy
-  meth: hex
-  desc: |+
-    >>> import cupy as cp
-    
-    NumPy/SciPy-compatible Array Library
-    for GPU-accelerated Computing with
-    Python
-    
-    "I thought my code was broken,
-    in reality it was just that fast."
-    
-- name: Cython
-  meth: hex
-  desc: |+
-    An optimizing static compiler. It
-    makes writing C extensions as easy
-    as Python itself.
-    
-    "I've only looked at your Python code;
-    there are just a couple typos here, 
-    where you've written 'cdef'"
-    
-- name: NetworkX
-  meth: tri
-  desc: |+
-    >>> import networkx as nx
-    
-    NetworkX is a package for the
-    creation, manipulation, and study
-    of the structure, dynamics, and 
-    functions of complex networks.
-    
-    "I'm going to do some networking in
-    the hallway track"
-    
-- name: SunPy
-  meth: tri
-  desc: |+
-    
-    The community-developed, free and
-    open-source solar data analysis
-    environment.
-    
-    "I got even more confused when you 
-    told me it has only 779 stars."
-    
-- meth: noise
-  name: Numba
-  desc: |+    
-    JIT compiler that translates a subset
-    of Python and NumPy code into fast
-    machine code.
-    
-    "I was not sure why beautiful code
-    would be faster. I guess I
-    misunderstood what decorated meant"
-    
-- name: Spyder
-  meth: sca
-  desc: |+
-    Scientific
-    PYthon
-    Developement
-    EnviRonment.
-    
-    "I originally thought it was made
-    for web developers".
-    
-- name: SymPy
-  meth: sca
-  desc: |+
-    Library for symbolic mathematics.
-    It aims to become a full-featured
-    computer algebra system (CAS).
-    
-    "As a real world example, let's
-    consider the Weierstrass function
-    that is continuous everywhere but
-    differentiable nowhere."
-- name: IPython
-  meth: tri
-  desc: |+
-    IPython provides a rich architecture
-    for interactive computing with a
-    powerful interactive shell and
-    a kernel for Jupyter.
-    
-    "In IPython we have weaponized your
-    tab key."
-                        -- Fernando Pérez
-- name: FEniCS
-  meth: hex
-  desc: |+
-    Quickly translate scientific models
-    into efficient finite element code
-    
-    "I'm sad the codebase does not
-    contain 'raise from hashes'"
-- name: Jupyter
-  meth: sca
-  desc: |+
-    Web services for interactive
-    computing across all programming
-    languages.
-    
-    "Are those folks in the business
-    of weird spelling and case
-    sensitivity?"
-- name: "Scikit-Learn"
-  meth: hex
-  desc: 
-    - |+
-      Simple and efficient tools for
-      predictive data analysis.
-      
-      "There are so many resource
-      to learn about scikit !"
-    - |+
-      Simple and efficient tools for
-      predictive data analysis.
-      
-      "Junior devs need to experiment
-      with if/else conditions, until
-      they do it fast enough, then it 
-      becomes machine learning"
-- name: Pytest
-  inset: True
-  meth: tri
-  power: 3
-  desc: |+
-    >>> def test_foo():
-    ...     assert 1 + 2 == 3
-    
-    "My needs are simple: running a 
-    collection of test functions. 
-    I don't use plugins, fixtures, 
-    or other advanced features...
-    but I could if I wanted them."
-- name: Hypothesis
-  inset: True
-  meth: tri
-  power: 5
-  desc: |+
-    >>> from hypothesis import given
-    
-    Find more bugs with less work, by
-    generating diverse test inputs.
-    
-    "The problem is that it's too good at
-    finding bugs, so I can't sneak broken
-    code in before the feature freeze."
-- name: Ghostwriter
-  inset: True
-  meth: tri
-  power: 4
-  desc: |+
-    $ hypothesis write gzip.compress
-    $ hypothesis write numpy.matmul
-    
-    A command-line interface which can
-    write property-based tests for you.
-    
-    "Sometimes, magic is just someone 
-    spending more time on something than
-    anyone else might reasonably expect."
+    Task: Find where Psi4 grabs PBE0
+    from Libxc.
 
-- name: "Pandera"
-  meth: hex
+    File/~Lines: ________________________
+- name: gau2grid
+  psi: I
+  logo: dgasmith
   desc: |+
-    A Statistical Data Testing Toolkit.
+    This C library vectorizes computing
+    grid-2-gaussian collocation matrices.
 
-    Provides a flexible and expressive
-    API for performing data validation
-    on dataframes to make data processing
-    pipelines more readable and robust.
-- name: "Scientific Python"
-  inset: True
-  meth: tri
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+- name: OptKing _
+  psi: P
+  logo: AlexHeide
   desc: |+
-    A community effort to better
-    coordinate the Scientific Python
-    ecosystem and grow the community.
+    This Python module runs geometry opt-
+    imizations and IRCs, driven by Psi4,
+    QCEngine, or standalone.
 
-    https://scientific-python.org
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: QCEngine
+  psi: S
+  logo: QCArchive
+  desc: |+
+    This Python module runs QC software
+    using QCSchema for I/O formats. Psi4
+    requires it for findif deriv, CBS mtds,
+    MBE jobs, and DFT-D.
+
+    Task: Find one of two files where Psi4
+    sends AtomicInput schema to QCEngine.
+
+    File: _______________________________
+- name: Libint2 _
+  psi: I
+  logo: evaleev
+  desc: |+
+    This C++ library can be configured to
+    provide integrals in 20 orderings.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: ccenergy
+  psi: P
+  logo: lothian
+  desc: |+
+    This suite of seven modules implements
+    CC energies, derivatives, properties,
+    and excited states.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: fnocc
+  psi: S
+  logo: edeprince3
+  desc: |+
+    This module implements a wide variety
+    of coupled-cluster energy methods
+    very efficiently. It is named after
+    the frozen natural orbitals approx.
+
+    Task: Which will fnocc *not* do? ccsd,
+    qcisd(t), CONV, DF, CD, UHF, FNO, FC
+
+    NYI: ________________________________
+- name: occ
+  psi: I
+  logo: bozkaya
+  desc: |+
+    The occ/dfocc pair runs CCD, CCSD(T),
+    CCSD, & A-CCSD(T) but only for DF & CD.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+- name: dlpno-cc
+  psi: P
+  logo: andyj10224
+  desc: |+
+    This in-development code builds upon
+    DLPNO-MP2 and is trialling the Einsums
+    tensor library.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: mrcc
+  psi: S
+  logo: mrcc
+  desc: |+
+    This external project uses Psi4's SCF,
+    then reads the orbitals to do any
+    number of high-order expensive CC
+    methods, with symmetry.
+
+    Task: `psi4.addons()` prints an avail-
+    ibility list. What is the mrcc exe?
+
+    Exe: ________________________________
+- name: cfour
+  psi: I
+  logo: cfour
+  desc: |+
+    This independent program can, for now,
+    be run as: `psi4.energy("c4-ccsd")`.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+- name: psimrcc
+  psi: I
+  logo: fevangelista
+  desc: |+
+    This module runs Mukherjee (Mk) multi-
+    ref CC atop 1- or 2-determinant ref.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: mp2f12
+  psi: P
+  logo: EricaCMitchell
+  desc: |+
+    This in-development code for MP2 is
+    the first since Psi3 to have F12
+    functionality.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: dfmp2
+  psi: S
+  logo: robparrish
+  desc: |+
+    Probably the first module written
+    fresh for Psi4, dfmp2 runs RHF, UHF, &
+    ROHF energies and RHF gradients, both
+    all-electron and frozen-core.
+
+    Task: Find the user keyword that spe-
+    cifies the auxiliary basis for dfmp2.
+
+    Keyword: ____________________________
+- name: detci _
+  psi: I
+  logo: CDSherrill
+  desc: |+
+    If you've curious about MP12, detci is
+    the module to call. V. small mols only.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: CompositeJK
+  psi: P
+  logo: davpoolechem
+  desc: |+
+    This new class allows mix-and-match
+    algorithms for Coulomb and Exchange.
+    DFDIRJ, COSX, & LINK are the choices.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: LibXCFunctional
+  psi: S
+  logo: susilehtola
+  desc: |+
+    This class connects the Libxc data
+    struct with the Psi4 Functional class.
+    We can query Libxc's params for print-
+    ing or alter its params for compute.
+
+    Task: Find a functional in Psi4 that
+    needs its Libxc parameters "tweak"ed.
+
+    Functional: _________________________
+- name: detcas
+  psi: I
+  logo: CDSherrill
+  desc: |+
+    This offshoot of detci can run CASSCF
+    and RASSCF both conventional and DF.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: detci
+  psi: P
+  logo: CDSherrill
+  desc: |+
+    This module specializes in full config-
+    uration interaction but runs truncated
+    CI, CC, MBPT, CASCI, RASCI & more.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: dct
+  psi: S
+  logo: JonathonMisiewicz
+  desc: |+
+    This module develops density cumulant
+    (no longer functional) theory, an ab
+    initio correlated mtd parameterizing
+    the connected 2RDM, rather than a wfn.
+
+    Task: Which fctl lacks analytic grads:
+    DC-06, ODC-06, DC-12, ODC-12, ODC-13?
+
+    Functional: _________________________
+- name: adcc
+  psi: I
+  logo: adcc
+  desc: |+
+    This external code provides algebraic-
+    diagrammatic construction to level-3.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: pyVPT2
+  psi: P
+  logo: philipmnel
+  desc: |+
+    This external Python module drives the
+    calc. of anharmonic vibrational freq.
+    It can run in parallel thru QCArchive.
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: resp
+  psi: S
+  logo: AsemAlenaizan
+  desc: |+
+    This external Python module drives Psi
+    to compute the quantum electrostatic
+    potential, then fits a classic point-
+    charge potential to it.
+
+    Task: Find the page number for the
+    classic Bayly paper on RESP.
+
+    Page Num: _____________________________
+- name: Forte
+  psi: I
+  logo: forte
+  desc: |+
+    This Evangelista Group plugin special-
+    izes in strongly correlated electrons.
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: blankp8
+  psi: P
+  logo: psi4
+  desc: |+
+    1
+    2
+    3
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: blanks8
+  psi: S
+  logo: psi4
+  desc: |+
+    1
+    2
+    3
+    4
+
+    Task: 5
+    6
+
+    File/~Lines: ________________________
+    File: _______________________________
+- name: blanki8
+  psi: I
+  logo: psi4
+  desc: |+
+    1
+    2
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
+- name: blankp
+  psi: P
+  logo: psi4
+  desc: |+
+    1
+    2
+    3
+
+    Task: Find & talk to the pictured GH
+    user who is a primary developer for
+    this module.
+
+    Dev's Initials: _____________________
+- name: blanks
+  psi: S
+  logo: psi4
+  desc: |+
+    1
+    2
+    3
+    4
+
+    Task: 5
+    6
+
+    File/~Lines: ________________________
+    File: _______________________________
+- name: blanki
+  psi: I
+  logo: psi4
+  desc: |+
+    1
+    2
+
+    Task: (a) Sign up for a lightning talk
+    -OR- (b) Find a trivial correction or
+    clarification to docs or code com-
+    ments, and make a PR thru GH website.
+
+    Talk Time/PR No.: ___________________
+##########################################.
